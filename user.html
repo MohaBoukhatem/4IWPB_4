@@ -46,8 +46,8 @@
                 </div>
                 <div class="link">
                     <div class="logo">
-                        <a href="/home.html"><img src="media/logo.png"></a>
-                        <a href="/home.html"><img src="media/logo2.png"></a>
+                        <a href="/home.html" class="mediapart-logo-icon"><img src="media/logo.png"></a>
+                        <a href="/home.html" class="mediapart-logo-text"><img src="media/logo2.png"></a>
                     </div>
                 </div>
                 <div class="one">
@@ -57,7 +57,7 @@
                             <iconify-icon icon="octicon:search-24" style="color: black;border: none;"></iconify-icon>
                             <iconify-icon id="checkbtn4" class="close" icon="radix-icons:cross-1"></iconify-icon>
                             <!-- <i class="fa fa-times close" aria-hidden="true"></i> -->
-    
+
                         </label>
                         <div class="search_pannel">
                             <label>Commencez à taper pour voir les articles que vous recherchez.</label>
@@ -90,7 +90,7 @@
                     </nav>
                     <button class="abonne">S'abonner</button>
                 </div>
-                
+
             </div>
         </div>
         <div class="bottom_head">
@@ -119,12 +119,10 @@
                     </nav>
                 </div>
                 <div class="search">
-                    <input type="checkbox" id="search_btn">
-                    <label for="search_btn">
+                    <input type="checkbox" id="search_btn2"> <!-- Changed ID here -->
+                    <label for="search_btn2"> <!-- Changed ID reference here -->
                         <iconify-icon icon="octicon:search-24"></iconify-icon>
                         <iconify-icon id="checkbtn4" class="close" icon="radix-icons:cross-1"></iconify-icon>
-                        <!-- <i class="fa fa-times close" aria-hidden="true"></i> -->
-
                     </label>
                     <div class="search_pannel">
                         <label>Commencez à taper pour voir les articles que vous recherchez.</label>
@@ -141,9 +139,9 @@
                         <li><a href="/home.html" class="active-link">à la Une</a>
                         <li><a href="#">Vidéos</a></li>
                         <li><a href="#">Rubriques</a></li>
-                       
+
                     </ul>
-                    
+
                 </nav>
                 <nav>
                     <ul class="secondary_nav">
@@ -151,14 +149,16 @@
                         <li><a href="#">Les batilles de l'eau</a></li>
                         <li><a href="#">L'affaire du fonds Marianne</a></li>
                     </ul>
-                    
+
                 </nav>
                 <div class="nav__blog">
-                    <a class="text-with-icon _vcenter" href="https://blogs.mediapart.fr/" data-smarttag="" data-smarttag-name="le_club" data-smarttag-chapter1="journal" data-smarttag-chapter2="header" data-smarttag-level2="9" data-smarttag-type="navigation">
+                    <a class="text-with-icon _vcenter" href="https://blogs.mediapart.fr/" data-smarttag=""
+                        data-smarttag-name="le_club" data-smarttag-chapter1="journal" data-smarttag-chapter2="header"
+                        data-smarttag-level2="9" data-smarttag-type="navigation">
                         <span style="margin: 0;">
-                            <div class="offf" >Le Club de Mediapart</div>
-                            <div class="offf" >Participez au débat</div>
-                            <div class="responsive" >Le Club de Mediapart</div>
+                            <div class="offf">Le Club de Mediapart</div>
+                            <div class="offf">Participez au débat</div>
+                            <div class="responsive">Le Club de Mediapart</div>
                         </span>
                     </a>
                 </div>
@@ -167,93 +167,96 @@
         </div>
 
     </nav>
-    <section class="contact "style="max-width: 1344px;margin:auto;">
-      <div class="contact-container">
-      
-  
-          <div class="formulaire" >
-            <h1 class="contact_formulaire_title">Profile</h1>
-            <form method="post" name="contact_form">
-              
-              <div class="form__group">
-                <input name="last_name" id="email" placeholder="Nom" class="form__field" type="input"
-                  autocomplete="off">
-                <label class="form__label" for="name">Nom</label>
-              </div>
-              <div class="form__group">
-                <input name="first_name" id="email" placeholder="Prénom" class="form__field" type="input"
-                  autocomplete="off">
-                <label class="form__label" for="name">Prénom</label>
-              </div>
-              <div class="form__group">
-                <input name="email" placeholder="E-mail" class="form__field" type="email"
-                  pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" id="email" autocomplete="off">
-                <label class="form__label" for="name">Email</label>
-              </div>
-              <div class="form__group">
-                <input name="subject" id="sujet" placeholder="Sujet" class="form__field" type="input">
-                <label class="form__label" for="name">Sujet</label>
-              </div>
-              <div class="form__group">
-                <input name="phone_number" id="number" placeholder="Mettez votre numéro" class="form__field" type="text"
-                  oninput="this.value=this.value.replace(/[^0-9]/g,'');" autocomplete="off">
-                <label class="form__label" for="name">téléphone</label>
-              </div>
-    
-              <div class="form__group">
-                <textarea name="Msg" id="box" placeholder="message" id="" cols="30" rows="10"></textarea>
-                <label class="form__label" for="name">Message</label>
-    
-              </div>
-              <button class="boutton-formulaire" type="submit"> Envoyer un message</button>
-            </form>
-          </div>
+    <section class="contact " style="max-width: 1344px;margin:auto;">
+        <div class="contact-container">
 
-      </div>
+
+            <div class="formulaire">
+                <h1 class="contact_formulaire_title">Profile</h1>
+                <form method="post" name="contact_form">
+
+                    <div class="form__group">
+                        <input name="last_name" id="email" placeholder="Nom" class="form__field" type="input">
+                        <label class="form__label" for="name">Nom</label>
+                    </div>
+                    <div class="form__group">
+                        <input name="first_name" id="email" placeholder="Prénom" class="form__field" type="input">
+                        <label class="form__label" for="name">Prénom</label>
+                    </div>
+                    <div class="form__group">
+                        <input name="email" placeholder="E-mail" class="form__field" type="email" id="email">
+                        <label class="form__label" for="name">Email</label>
+                    </div>
+                    <div class="form__group">
+                        <input name="subject" id="sujet" placeholder="Sujet" class="form__field" type="password">
+                        <label class="form__label" for="name">Mot de Passe</label>
+                    </div>
+                    <div class="form__group">
+                        <input name="phone_number" id="number" placeholder="Mettez votre numéro" class="form__field"
+                            type="text">
+                        <label class="form__label" for="name">téléphone</label>
+                    </div>
+
+                    <div class="form__group">
+                        <select id="pays">
+                            <option value="Pays">Pays</option>
+                            <option value="France">France</option>
+                            <option value="Bélgique">Bélgique</option>
+                            <option value="Pays bas">Pays bas</option>
+                            <option value="UK">UK</option>
+                        </select>
+                        <label class="form__label" for="name">ville</label>
+
+                    </div>
+                    <button class="boutton-formulaire" type="submit"> Modifier</button>
+                </form>
+            </div>
+
+        </div>
     </section>
-    <footer class="footer" >
-      <div class="box-container" style="max-width: 1440px; margin: auto;">
+    <footer class="footer">
+        <div class="box-container" style="max-width: 1440px; margin: auto;">
 
-          <div class="box">
-              <h3>Le Journal</h3>
-              <a href="#">International</a>
-              <a href="#">Écologie</a>
-              <a href="#">Économie et social</a>
-              <a href="#">France</a>
-              <a href="#">Politique</a>
-              <a href="#">Culture et idées</a>
-              <a href="#">Dossiers </a>
-              <a href="#">Fil d’actualités</a>
-              <a href="#">Journal imprimé</a>
-          </div>
-          <div class="box">
-              <h3>Le Studio</h3>
-              <a href="#">Vidéos</a>
-              <a href="#">Podcasts</a>
-              <a href="#">Documentaires</a>
-              <a href="#">Portfolios</a>
-              <a href="#">Panoramiques</a>
-          </div>
-          <div class="box">
-              <h3>Le Club</h3>
-              <a href="#">Depuis 48 heures</a>
-              <a href="#">Les blogs</a>
-              <a href="#">Les éditions</a>
-              <a href="#">L’agenda</a>
-              <a href="#">La charte</a>
-              <a href="#">Participez</a>
-          </div>
-          <div class="box">
-              <h3>À Propos</h3>
-              <a href="#"> Qui sommes-nous ?</a>
-              <a href="#">Besoin d’aide ?</a>
-              <a href="#"> Nous contacter</a>
-              <a href="#">Partager des documents</a>
-              <a href="#">Plan du site</a>
-              <a href="#">Recrutement</a>
-          </div>     
+            <div class="box">
+                <h3>Le Journal</h3>
+                <a href="#">International</a>
+                <a href="#">Écologie</a>
+                <a href="#">Économie et social</a>
+                <a href="#">France</a>
+                <a href="#">Politique</a>
+                <a href="#">Culture et idées</a>
+                <a href="#">Dossiers </a>
+                <a href="#">Fil d’actualités</a>
+                <a href="#">Journal imprimé</a>
+            </div>
+            <div class="box">
+                <h3>Le Studio</h3>
+                <a href="#">Vidéos</a>
+                <a href="#">Podcasts</a>
+                <a href="#">Documentaires</a>
+                <a href="#">Portfolios</a>
+                <a href="#">Panoramiques</a>
+            </div>
+            <div class="box">
+                <h3>Le Club</h3>
+                <a href="#">Depuis 48 heures</a>
+                <a href="#">Les blogs</a>
+                <a href="#">Les éditions</a>
+                <a href="#">L’agenda</a>
+                <a href="#">La charte</a>
+                <a href="#">Participez</a>
+            </div>
+            <div class="box">
+                <h3>À Propos</h3>
+                <a href="#"> Qui sommes-nous ?</a>
+                <a href="#">Besoin d’aide ?</a>
+                <a href="#"> Nous contacter</a>
+                <a href="#">Partager des documents</a>
+                <a href="#">Plan du site</a>
+                <a href="#">Recrutement</a>
+            </div>
 
-      </div>
+        </div>
 
     </footer>
 

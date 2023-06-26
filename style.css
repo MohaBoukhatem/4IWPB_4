@@ -711,6 +711,9 @@ hr {
 #search_btn {
     display: none;
 }
+#search_btn2 {
+    display: none;
+}
 
 #checkbtn4 {
     z-index: 10;
@@ -725,9 +728,7 @@ hr {
     cursor: pointer;
 }
 
-#search_btn {
-    display: none;
-}
+
 
 #checkbtn4 {
     z-index: 10;
@@ -815,6 +816,20 @@ html.sr body div.head div div.link div.search div.search_pannel form button {
     position: absolute;
     right: 50px;
 }
+#search_btn2:checked~.search_pannel {
+    bottom: 0;
+    transition: all .4s ease-in-out;
+    overflow-y: auto;
+}
+
+#search_btn2:checked~label .close {
+    opacity: 1;
+    top: 120px;
+    transition: all .4s ease-in-out;
+    position: absolute;
+    right: 50px;
+}
+
 
 
 /* FOOTER */
@@ -1534,7 +1549,7 @@ main {
     margin-bottom: 15px;
 }
 
-.form__group input {
+.form__group input,.form__group select {
     display: block;
     width: 100%;
     height: 34px;
@@ -1646,13 +1661,11 @@ main {
     line-height: 44px;
     display: inline-block;
     vertical-align: top;
-    border-radius: 3px;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
-    border-radius: 35px;
-    -webkit-border-radius: 35px;
+
     float: right;
     cursor: pointer;
 }
