@@ -422,7 +422,21 @@ hr {
     border: 1px solid #FC392B;
 
 }
-
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile iconify-icon{
+    font-size: 22px;
+}
+.profile span{
+    font-size:16px;
+    font-weight: 400;
+    line-height: calc(1rem*1);
+    line-height: 1rem;
+    letter-spacing: .04em;
+}
 .user_sidebar {
     display: flex;
     flex-direction: row-reverse;
