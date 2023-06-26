@@ -124,136 +124,6 @@ body {
     margin-top: 30px;
 }
 
-.form .input-box {
-    width: 100%;
-    margin-top: 20px;
-}
-
-.input-box label {
-    color: white;
-    font-weight: bold;
-}
-
-.form :where(.input-box input, .select-box) {
-    position: relative;
-    height: 40px;
-    width: 100%;
-    outline: none;
-    font-size: 1rem;
-    color: white;
-    margin-top: 8px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    padding: 0 15px;
-    background-color: #001324;
-    font-family: 'Montserrat', Arial, sans-serif;
-
-}
-
-.input-box input:focus {
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-}
-
-.form .column {
-    display: flex;
-    column-gap: 15px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.form .gender-box {
-    margin-top: 20px;
-}
-
-.gender-box h3 {
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    margin-bottom: 8px;
-
-}
-
-.form :where(.gender-option, .gender) {
-    display: flex;
-    align-items: center;
-    column-gap: 50px;
-    flex-wrap: wrap;
-}
-
-.form .gender {
-    column-gap: 5px;
-}
-
-.gender input {
-    accent-color: rgb(253 195 0);
-}
-
-.form :where(.gender input, .gender label) {
-    cursor: pointer;
-}
-
-.gender label {
-    color: white;
-}
-
-.address :where(input, .select-box) {
-    margin-top: 15px;
-}
-
-.select-box select {
-    height: 100%;
-    width: 100%;
-    outline: none;
-    border: none;
-    color: white;
-    font-size: 1rem;
-    background-color: #001324;
-}
-
-.form button {
-    height: 40px;
-    width: 15%;
-    color: #001324;
-    font-size: 1rem;
-    font-weight: bold;
-    margin-top: 30px;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    background: rgb(253 195 0);
-
-
-}
-
-.form .supp {
-    height: 40px;
-    width: 30%;
-    background: #001324;
-    color: #ddd;
-
-}
-
-.form button:hover {
-    color: rgb(253 195 0);
-    background: #001324;
-}
-
-.form .supp:hover {
-    background: #ddd;
-    color: #001324;
-}
-
-/*Responsive*/
-@media screen and (max-width: 500px) {
-    .form .column {
-        flex-wrap: wrap;
-    }
-
-    .form :where(.gender-option, .gender) {
-        row-gap: 15px;
-    }
-}
-
 /* Home template */
 
 img {
@@ -389,7 +259,7 @@ hr {
 
 
 .sub_sidebar a {
-    font-family: Montserrat, Arial sans-serif;
+   
     display: block;
     padding: 16px 24px;
     text-decoration: none;
@@ -619,7 +489,6 @@ hr {
 }
 
 .navbar-items li a {
-    font-family: Montserrat, sans-serif;
     line-height: 21px;
     letter-spacing: -0.472px;
     margin: 0px 4px;
@@ -1547,7 +1416,7 @@ main {
     font-weight: 300;
     text-transform: uppercase;
     margin: 20px 0; */
-    color: #7E7E7E;
+    color: black;
     margin: 0px 0px 20px;
     padding: 7px 0px;
     line-height: 25.7167px;
@@ -1570,7 +1439,7 @@ main {
     padding: 6px 12px;
     font-size: 12px;
     line-height: 1.42857143;
-    color: #555;
+    color: black;
     background-color: #fff;
     background-image: none;
     border: 1px solid #ccc;
@@ -1588,7 +1457,7 @@ main {
     padding: 6px 12px;
     font-size: 12px;
     line-height: 1.42857143;
-    color: #555;
+    color: black;
     background-color: #fff;
     background-image: none;
     border: 1px solid #ccc;
@@ -1607,7 +1476,7 @@ main {
 
 .form__label {
     width: 16%;
-    color: #7E7E7E;
+    color: black;
     font-size: 13px;
     margin: 0px;
     padding: 7px 15px 0px;
@@ -1661,14 +1530,14 @@ main {
     border: 1px solid rgb(190, 183, 183);
     outline: none;
     resize: none;
-    color: rgb(102, 102, 102);
+    color: black;
     height: 250px;
 }
 
 .boutton-formulaire {
     padding: 0px 25px;
     color: #ffffff;
-    background-color: #a76d50;
+    background-color: black;
     border: 1px solid white;
     text-transform: capitalize;
     font-size: 14px;
@@ -1686,8 +1555,8 @@ main {
 
 .boutton-formulaire:hover {
     background-color: #fff;
-    border: 1px solid #a76d50;
-    color: #a76d50;
+    border: 1px solid black;
+    color: black;
 }
 
 .responsive {
