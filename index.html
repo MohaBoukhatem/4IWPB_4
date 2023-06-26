@@ -27,16 +27,51 @@
         width: 100%;
         background-color: transparent;">
             <div class="head">
+                <div class="date">
+                    <ul>
+                        <li>
+                            <div class="language">français</div>
+                        </li>
+                        -
+                        <li>
+                            <div class="language">English</div>
+                        </li>
+                        -
+                        <li>
+                            <div class="language">Espanôl</div>
+                        </li>
+                    </ul>
+                    <p>lundi 26 juin </p>
+                    <span>Édition de la mi-journée </span>
+                </div>
                 <div class="link">
                     <div class="logo">
-                        <a href="/home.html"><img src="media/RTBF.svg" class="RTBF" id="logo-img"></a>
+                        <a href="/home.html"><img src="media/logo.png"></a>
+                        <a href="/home.html"><img src="media/logo2.png"></a>
                     </div>
                 </div>
                 <div class="one">
+                    <div class="search off">
+                        <input type="checkbox" id="search_btn">
+                        <label for="search_btn">
+                            <iconify-icon icon="octicon:search-24" style="color: black;border: none;"></iconify-icon>
+                            <iconify-icon id="checkbtn4" class="close" icon="radix-icons:cross-1"></iconify-icon>
+                            <!-- <i class="fa fa-times close" aria-hidden="true"></i> -->
+    
+                        </label>
+                        <div class="search_pannel">
+                            <label>Commencez à taper pour voir les articles que vous recherchez.</label>
+                            <form action="{{url_for('store.search')}}" method=get>
+                                <input name="search" type="text" placeholder="Rechercher ..." required>
+                                <button type="submit">
+                                    <iconify-icon icon="ic:baseline-search"></iconify-icon>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
                     <input type="checkbox" id="checkbtn">
                     <label for="checkbtn">
-                        <!-- <iconify-icon style="opacity: 0;" class="hamburger" icon="pajamas:hamburger">menu</iconify-icon> -->
-                        <i style="opacity: 0;" class="fas fa-bars hamburger"><span>menu</span></i>
+                        <i style="opacity: 1;" class="fas fa-bars hamburger off"></i>
                         <iconify-icon id="checkbtn2" class="quitter" icon="radix-icons:cross-1"></iconify-icon>
                     </label>
 
@@ -53,12 +88,9 @@
                         </ul>
                         <div class="empty"></div>
                     </nav>
+                    <button class="abonne">S'abonner</button>
                 </div>
-                <div class="social">
-                    <img src="media/sun.svg" alt="sun">
-                    <img src="media/search.svg" alt="search">
-                    <a href="/profile.html"><img class="profile" src="media/user.svg" alt="user"></a>
-                </div>
+                
             </div>
         </div>
         <div class="bottom_head">
@@ -124,8 +156,9 @@
                 <div class="nav__blog">
                     <a class="text-with-icon _vcenter" href="https://blogs.mediapart.fr/" data-smarttag="" data-smarttag-name="le_club" data-smarttag-chapter1="journal" data-smarttag-chapter2="header" data-smarttag-level2="9" data-smarttag-type="navigation">
                         <span style="margin: 0;">
-                            <div >Le Club de Mediapart</div>
-                            <div >Participez au débat</div>
+                            <div class="offf" >Le Club de Mediapart</div>
+                            <div class="offf" >Participez au débat</div>
+                            <div class="responsive" >Le Club de Mediapart</div>
                         </span>
                     </a>
                 </div>
