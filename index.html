@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html>
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>RTBF.be</title>
-    <link rel="icon" type="image/x-icon" href="media/Sans titre.png">
+
+    <title>Mediapart - Actualité, enquêtes et dossiers d’investigation en toute indépendance !</title>
+    <link rel="icon" type="image/x-icon" sizes="180x180" href="media/favicon.png">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
@@ -19,7 +20,6 @@
 </head>
 
 <body>
-
     <nav class="merge_nav">
         <div style="max-width: 1440px;margin: auto;;display: flex;
         justify-content: flex-end;
@@ -31,15 +31,6 @@
                     <div class="logo">
                         <a href="/home.html"><img src="media/RTBF.svg" class="RTBF" id="logo-img"></a>
                     </div>
-
-                    <nav class="navbar">
-                        <ul>
-                            <li><a href="#">Video</a></li>
-                            <li><a href="#">Audio</a></li>
-                            <li><a href="#">mon choix</a></li>
-                            <li><a href="#">chaines</a></li>
-                        </ul>
-                    </nav>
                 </div>
                 <div class="one">
                     <input type="checkbox" id="checkbtn">
@@ -71,7 +62,7 @@
             </div>
         </div>
         <div class="bottom_head">
-            <div style="margin: auto;display: flex;align-items: center;">
+            <div style="margin: auto;display: flex;align-items: center;width: 1344px;">
 
 
                 <div class="two">
@@ -95,240 +86,228 @@
                         <div class="empty"></div>
                     </nav>
                 </div>
+                <div class="search">
+                    <input type="checkbox" id="search_btn">
+                    <label for="search_btn">
+                        <iconify-icon icon="octicon:search-24"></iconify-icon>
+                        <iconify-icon id="checkbtn4" class="close" icon="radix-icons:cross-1"></iconify-icon>
+                        <!-- <i class="fa fa-times close" aria-hidden="true"></i> -->
+
+                    </label>
+                    <div class="search_pannel">
+                        <label>Commencez à taper pour voir les articles que vous recherchez.</label>
+                        <form action="{{url_for('store.search')}}" method=get>
+                            <input name="search" type="text" placeholder="Rechercher ..." required>
+                            <button type="submit">
+                                <iconify-icon icon="ic:baseline-search"></iconify-icon>
+                            </button>
+                        </form>
+                    </div>
+                </div>
                 <nav class="navbar2">
                     <ul class="navbar-items">
-                        <li><a href="/home.html">acceuil</a>
-                        <li>
-                        <li><a href="#">filactu</a></li>
-                        <li>
-                            <input type="checkbox" id="checkbtn3" checked>
-                            <label for="checkbtn3">
-                                <span class="hamburger2">Info</span>
-                            </label>
-
-                            <nav class="sidebar2">
-                                <ul class="navbar-items2">
-                                    <span
-                                        style="align-self: center;margin-left: auto;text-transform: uppercase;font-weight: 600;padding-right: 1.25rem;font-size: 24px;">info
-                                        <span>|</span> </span>
-                                    <div class="sub_sidebar2">
-                                        <a href="#">regions</a>
-                                        <a href="#">belgique</a>
-                                        <a href="#">europe</a>
-                                        <a href="#">monde</a>
-                                        <a href="#">economie</a>
-                                        <a href="#">politique</a>
-                                        <a href="#">justice</a>
-                                        <a href="#">faky</a>
-                                        <a href="#">qustions-réponses</a>
-                                        <a href="#">chronique</a>
-                                        <a href="#">opinions</a>
-                                        <a href="#">météo</a>
-                                        <a href="#">trafic</a>
-
-
-                                    </div>
-                                </ul>
-                            </nav>
-                        </li>
-                        <li><a href="#">sport</a></li>
-                        <li><a href="#">actualités locales</a></li>
-                        <li><a href="#">culture et musique</a></li>
-                        <li><a href="#">environnement et nature</a></li>
-                        <li><a href="#">santé et bien-etre</a></li>
-                        <li><a href="#">sciences et technolgies</a></li>
-                        <li><a href="#">santé et bien-etre</a></li>
-                        <li><a href="#">vie pratique</a></li>
-                        <li><a href="#">tous les sujets</a></li>
+                        <li><a href="/home.html" class="active-link">à la Une</a>
+                        <li><a href="#">Vidéos</a></li>
+                        <li><a href="#">Rubriques</a></li>
+                       
                     </ul>
+                    
                 </nav>
+                <nav>
+                    <ul class="secondary_nav">
+                        <li><a href="#">Guerre en Ukrane</a></li>
+                        <li><a href="#">Les batilles de l'eau</a></li>
+                        <li><a href="#">L'affaire du fonds Marianne</a></li>
+                    </ul>
+                    
+                </nav>
+                <div class="nav__blog">
+                    <a class="text-with-icon _vcenter" href="https://blogs.mediapart.fr/" data-smarttag="" data-smarttag-name="le_club" data-smarttag-chapter1="journal" data-smarttag-chapter2="header" data-smarttag-level2="9" data-smarttag-type="navigation">
+                        <span style="margin: 0;">
+                            <div >Le Club de Mediapart</div>
+                            <div >Participez au débat</div>
+                        </span>
+                    </a>
+                </div>
 
             </div>
         </div>
 
     </nav>
+    <div class="main_article">
+        <div style="max-width: 1344px;margin: auto;">
+            <div class="image_content">
+                <img src="media/the main article.jpg" alt="the main article">
+                <span class="stiker">Édition spéciale</span>
+            </div>
+            <div class="section__content">
+                <h2 class="section__heading"><span class="section__heading__container">Macron et les quartiers, le
+                        rendez-vous manqué</span></h2>
+                <div class="block__content">
+                    <div class="arcticle1">
+                        <article class="paragraphe" style="width: 100% !important;">
+                            <h2>Récit d’un abandon présidentiel </h2>
+                            <div class="teaser__body" style="border: none !important;">
+                                <p>Le président de la République devrait annoncer, lundi à Marseille (Bouches-du-Rhône),
+                                    les contours de « Quartiers 2030 », son plan pour les banlieues et les quartiers
+                                    prioritaires. Sur le terrain, élus et associatifs peinent à y croire, échaudés par
+                                    six ans de rendez-vous manqués et de revirements du chef de l’État.</p>
+                                <div class="signature">
+                                    <span>par Ilyes Ramdani</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="arcticle1">
+                        <div class="sub_article">
+                            <article class="paragraphe" style="width: 100% !important;">
+                                <h2>« La politique de la ville a disparu de l’espace public » </h2>
+                                <div class="signature">
+                                    <span>par Lucie Delaporte et Ilyes Ramdani</span>
+                                </div>
+                        </div>
+                        </article>
+                        <article class="paragraphe" style="width: 100% !important;">
+                            <h2>Au Mirail à Toulouse, les habitants face au « logiciel périmé » de la rénovation urbaine
+                            </h2>
+                            <div class="signature">
+                                <span>par Lucie Delaporte</span>
+                            </div>
+                    </div>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    </div>
+
+
 
     <section class="banner" style="max-width: 1400px;margin: auto;">
-        <div class="sub_articles">
-            <div class="sub_article1">
-                <h2>
-                    <a href="#">
-                        Saint-Gobain au centre d’un scandale sanitaire aux États-Unis
-                    </a>
-                </h2>
-                <!-- <hr style="border: 1px dotted #444444;margin-top: 16px;margin-bottom: 16px;width: inherit;"> -->
-                <div class="teaser__body">
-                    <p><br>L’industriel français a contaminél’eau potable de milliers de personnes
-                        et fait d’innombrables victimes. Un lanceur d’alerte dénonce ses mensonges et ses stratégies
-                        pour échapper à de nouvelles indemnisations. Dans le New Hampshire, les juges conservateurs
-                        ont jusqu’ici laissé faire.</p>
+
+        <main>
+            <div class="sub_articles">
+                <div class="sub_article1">
+                    <h2>
+                        <a href="#">
+                            Saint-Gobain au centre d’un scandale sanitaire aux États-Unis
+                        </a>
+                    </h2>
+                    <!-- <hr style="border: 1px dotted #444444;margin-top: 16px;margin-bottom: 16px;width: inherit;"> -->
+                    <div class="teaser__body">
+                        <p><br>L’industriel français a contaminél’eau potable de milliers de personnes
+                            et fait d’innombrables victimes. Un lanceur d’alerte dénonce ses mensonges et ses stratégies
+                            pour échapper à de nouvelles indemnisations. Dans le New Hampshire, les juges conservateurs
+                            ont jusqu’ici laissé faire.</p>
                         <div class="signature">
                             <span>par Patricia Neves</span>
                         </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="priciple_article">
-            <div class="image_first_article">
-                <a href="/article.html"><img src="media/article_pic.jpg" alt=""></a>
-            </div>
-            <div class="content">
-                <figcaption>Un système de filtration d'eau dans le jardin de la maison de Nancy Murphy à Merrimack (États-Unis), à deux miles de l'usine Saint-Gobain, en 2020. © Photo Charles Krupa / AP / Sipa</figcaption>
-            </div>
-        </div>
-        <aside>
-            <h2 class="club-text-logo">
-                <strong class="club-text-logo__title">Le Club de Mediapart<br></strong>
-                <span class="club-text-logo__baseline">Participez au débat</span>
-            </h2>
-            <div class="sidebar3">
-                <h3>Geoffroy Lejeune au JDD : non au passage en force !</h3>
-                <div class="teaser__body"><p>Plus de 30 sociétés de journalistes apportent leur soutien aux salariés du JDD en grève contre l’arrivée de Geoffroy Lejeune, ancien directeur de la rédaction de l’hebdomadaire d’extrême droite Valeurs actuelles.</p></div>
-                <div class="sidebar_signature">
-                    <span>par La SDJ De Mediapart</span>
+            <div class="priciple_article">
+                <div class="image_first_article">
+                    <a href="/article.html"><img src="media/article_pic.jpg" alt=""></a>
+                </div>
+                <div class="content">
+                    <figcaption>Un système de filtration d'eau dans le jardin de la maison de Nancy Murphy à Merrimack
+                        (États-Unis), à deux miles de l'usine Saint-Gobain, en 2020. © Photo Charles Krupa / AP / Sipa
+                    </figcaption>
                 </div>
             </div>
-        </aside>
+            <aside>
+                <h2 class="club-text-logo">
+                    <strong class="club-text-logo__title">Le Club de Mediapart<br></strong>
+                    <span class="club-text-logo__baseline">Participez au débat</span>
+                </h2>
+                <div class="sidebar3">
+                    <h3>Geoffroy Lejeune au JDD : non au passage en force !</h3>
+                    <div class="teaser__body2">
+                        <p>Plus de 30 sociétés de journalistes apportent leur soutien aux salariés du JDD en grève
+                            contre l’arrivée de Geoffroy Lejeune, ancien directeur de la rédaction de l’hebdomadaire
+                            d’extrême droite Valeurs actuelles.</p>
+                    </div>
+                    <div class="sidebar_signature">
+                        <span>par La SDJ De Mediapart</span>
+                    </div>
+                    <div style="border-top: 0.5px dotted;margin-top: 8px; margin-bottom: 8px;"></div>
+                    <h3>Triste Tempo</h3>
+                    <div class="teaser__body2">
+                        <p>Le 4 septembre prochain, Delphine Ernotte, présidente de France Télévisions mettra fin aux
+                            éditions nationales de France 3. Sous le nom de code « Tempo », les 24 antennes régionales
+                            occuperont le créneau actuel, pour symboliser l’inversion du modèle actuel. </p>
+                    </div>
+                    <div class="sidebar_signature">
+                        <span>par Moi président...de France Télévisions</span>
+                    </div>
+                </div>
+            </aside>
+        </main>
+        <main class="second">
+            <div class="priciple_article2">
+                <div class="image_second_article">
+                    <a href="/article.html"><img src="media/second article.jpg" alt=""></a>
+                </div>
+                <div class="content">
+                    <figcaption>Un système de filtration d'eau dans le jardin de la maison de Nancy Murphy à Merrimack
+                        (États-Unis), à deux miles de l'usine Saint-Gobain, en 2020. © Photo Charles Krupa / AP / Sipa
+                    </figcaption>
+                </div>
+            </div>
+            <article class="paragraphe">
+                <h2>Comment remettre la gauche en ordre de bataille ? Le débat entre Lumir Lapray et Claire Lejeune</h2>
+                <div class="teaser__body">
+                    <p>Toutes deux ont été candidates aux législatives pour la Nupes et incarnent une nouvelle
+                        génération activiste attachée à l’union de la gauche écologiste. Alors que celle-ci apparaît
+                        affaiblie, Lumir Lapray et Claire Lejeune discutent des conditions de son redressement.</p>
+                    <div class="signature">
+                        <span>par Mathieu Dejean et Fabien Escalona</span>
+                    </div>
+                </div>
+            </article>
+            <aside>
+
+                <div class="sidebar3">
+                    <h3>Retour sur « Rachel Keke, l’ouvrière et le bourgeois » </h3>
+                    <div class="teaser__body2">
+                        <p>Il y a un an, Rachel Keke est élue députée de la 7e circonscription du Val-de-Marne en
+                            battant Roxana Maracineanu, ancienne ministre des Sports d’Emmanuel Macron. Un sentiment de
+                            fierté gagne mon corps : l'élection d'une femme ouvrière racisée binationale est un symbole
+                            pour celles et ceux qui ne sont rien.</p>
+                    </div>
+                    <div class="sidebar_signature">
+                        <span>par Marcuss</span>
+                    </div>
+                    <div style="border-top: 0.5px dotted;margin-top: 8px; margin-bottom: 8px;"></div>
+                    <h3>Le FPL annonce sa première prise de participation dans le journal « Le Crestois » </h3>
+                    <div class="teaser__body2">
+                        <p>Placé en redressement judiciaire, cet hebdomadaire d’informations locales dans le nord de la
+                            Drôme a été repris par plusieurs salariés et journalistes constitués en société coopérative.
+                            Pour soutenir cette relance et aider à un indispensable visage numérique, le FPL a pris une
+                            participation minoritaire au capital de la nouvelle société.</p>
+                    </div>
+                    <div class="sidebar_signature">
+                        <span>par FPL</span>
+                    </div>
+                </div>
+            </aside>
+        </main>
+
+
 
     </section>
 
-    <hr>
-
-    <main style="max-width: 1400px; margin: auto;">
-        <section class="main-container-left">
-            <h2>Top Stories</h2>
-            <div class="container-top-left">
-                <article>
-                    <img src="media/top-left.jpg">
-
-                    <div>
-                        <h3>Meilleures voitures d'occasion de moins de 20 000 $ pour les familles</h3>
-
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ea sint, nisi rem earum
-                            fugit? Facere veritatis sapiente eveniet quibusdam.</p>
-
-                        <a href="#">En savoir plus <span>>></span></a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="container-bottom-left">
-                <article>
-                    <img src="media/bottom-left-1.jpg">
-                    <div>
-                        <h3>Les meilleurs haut-parleurs intelligents de l'année</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi iure modi animi cupiditate.
-                            Explicabo, nihil?</p>
-
-                        <a href="#">En savoir plus<span>>></span></a>
-                    </div>
-                </article>
-
-                <article>
-                    <img src="media/bottom-left-2.jpg">
-                    <div>
-                        <h3>iPad Pro, passé en revue : L'iPad est-il devenu mon ordinateur principal maintenant ?</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi iure modi animi cupiditate.
-                            Explicabo, nihil?</p>
-
-                        <a href="#">En savoir plus<span>>></span></a>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section class="main-container-right">
-            <h2>Dernières histoires</h2>
-
-            <article>
-                <h4>À la Une </h4>
-                <div>
-                    <h2>Voici comment suivre votre chèque de relance avec le portail IRS Get My Payment</h2>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, repellendus?</p>
-
-                    <a href="#">En savoir plus <span>>></span></a>
-                </div>
-                <img src="media/right-1.jpg">
-            </article>
-
-            <article>
-                <h4>À la Une </h4>
-                <div>
-                    <h2>Les meilleurs jeux de plein air pour jouer en famille</h2>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, repellendus?</p>
-
-                    <a href="#">En savoir plus <span>>></span></a>
-                </div>
-                <img src="media/right-2.jpg">
-            </article>
-
-            <article>
-                <h4>À la Une </h4>
-                <div>
-                    <h2>Pourquoi marcher ? Découvrez les meilleurs scooters électriques et vélos électriques pour 2020
-                    </h2>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, repellendus?</p>
-
-                    <a href="#">En savoir plus <span>>></span></a>
-                </div>
-                <img src="media/right-3.jpg">
-            </article>
-
-            <article>
-                <h4>À la Une </h4>
-                <div>
-                    <h2>Disneyland Paris diffusera son spectacle sur scène le Roi Lion vendredi soir</h2>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, repellendus?</p>
-
-                    <a href="#">En savoir plus <span>>></span></a>
-                </div>
-                <img src="media/right-4.jpg">
-            </article>
-
-            <article>
-                <h4>À la Une </h4>
-                <div>
-                    <h2>Regarder l'écran de verrouillage d'un téléphone nécessite également un mandat, juge les règles
-                    </h2>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, repellendus?</p>
-
-                    <a href="#">En savoir plus <span>>></span></a>
-                </div>
-                <img src="media/right-5.jpg">
-            </article>
-        </section>
-    </main>
-
-    <hr>
-
-    <footer class="footer" style="max-width: 1440px; margin: auto;">
-        <div class="top_footer" style="max-width: 1440px;margin: auto;">
-            <div class="channels">
-                <img src="media/RTBF.svg" class="RTBF" style="width:86px;height:30px;" alt="">
-                <img src="media/Auvio-fd-noir.svg" style="width:86px;height:30px;" alt="">
-            </div>
-            <div class="appdownload">
-                <img src="media/disponible-google-play.svg" style="width:133px;height:32px;" alt="">
-                <img src="media/disponible-app-store.svg" style="width:133px;height:32px;" alt="">
-            </div>
-            <div class="social_media">
-                <span>suivez-nous</span>
-                <div class="social_media_icon">
-                    <img src="media/facebook.svg" class="RTBF" style="width:24px; height: 24px;" alt="">
-                    <img src="media/linkedin.svg" class="RTBF" style="width:24px; height: 24px;" alt="">
-                    <img src="media/twitter.svg" class="RTBF" style="width:24px; height: 24px;" alt="">
-                </div>
-
-            </div>
-        </div>
+   
 
 
-        <div class="box-container">
+
+
+    <footer class="footer" >
+        <div class="box-container" style="max-width: 1440px; margin: auto;">
 
             <div class="box">
                 <h3>thématiques</h3>
@@ -399,7 +378,6 @@
 
     </footer>
 
-    <hr>
 
 </body>
 
