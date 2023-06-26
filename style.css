@@ -1053,7 +1053,7 @@ main {
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 8rem;
 
 }
 
@@ -1064,7 +1064,6 @@ main {
 .footer .box-container .box h3 {
     font-size: 14px;
     padding: 0px 0px 8px;
-    font-family: 'Montserrat', Arial, sans-serif;
     color: #777777;
 }
 
@@ -1074,7 +1073,6 @@ main {
     letter-spacing: -0.472px;
     font-weight: 500;
     font-size: 14px;
-    font-family: 'Montserrat', Arial, sans-serif;
 }
 
 .footer .box-container .box a::first-letter {
