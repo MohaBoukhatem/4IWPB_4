@@ -651,15 +651,15 @@ hr {
 
 
 .banner{
-    padding: 2rem 7%;
+    padding: 2rem 4%;
     width: 100%;
     height: fit-content;
-    display: flex;
     gap: 30px;
 }
 .priciple_article{
     height: 100%;
     overflow: hidden;
+    width: 520px;
 
 }
 .image_first_article{
@@ -692,6 +692,8 @@ hr {
 }
 .teaser__body{
     margin-top: 16px;
+    padding-top: 16px;
+    border-top: 0.5px dotted;
 }
 .teaser__body p{
     color: #444444;
@@ -718,7 +720,7 @@ hr {
     margin: 8px 0px 0px;
     font-weight: 400;
     font-family:"Atlas Grotesk","Helvetica","Arial",sans-serif;
-    width: 520px;
+    
 }
 .club-text-logo {
     font-family: "Atlas Grotesk","Helvetica","Arial",sans-serif;
@@ -754,7 +756,7 @@ hr {
     line-height: 20px;
     font-weight: 700;
   }
-  .teaser__body {
+  .teaser__body2 {
     margin-top: 8px;
     font-family: "Atlas Grotesk","Helvetica","Arial",sans-serif;
     font-size: .875rem;
@@ -762,7 +764,7 @@ hr {
     line-height: 20px;
     color: #134F67;
   }
-  .teaser__body p{
+  .teaser__body2 p{
     color: #134F67;
   }
   .sidebar_signature{
@@ -777,156 +779,112 @@ hr {
   }
 /** main ***/
 
-main a {
-    padding: 15px 0;
-    display: block;
-    transition: all 0.5s;
+main{
+    display: flex !important;
+    column-gap: 25px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
-main span {
-    transition: padding-left 0.5s;
+.image_second_article{
+    width: 380px;
+    height: 250px;
 }
-
-main a:hover span {
-    padding-left: 5px;
+.priciple_article2{
+    width: 380px;
 }
-
-main a:hover {
-    color: #7ac64d;
+.paragraphe{
+    width: 520px;
 }
-
-/* main container left */
-
-.main-container-left {
-    padding: 30px 10px;
+.paragraphe h2{
+    color: #000;
+    font-family: "Pensum Pro","Georgia",serif;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: -0.32px;
+    font-weight: 700;
+    font-weight: 900;
 }
-
-.main-container-left>h2 {
-    padding: 15px 0 15px 30px;
+.main_article{
+    padding: 0 24px;
+    padding-bottom: 40px;
+    background-color: #c0babc !important;
 }
-
-.main-container-left h3 {
-    padding: 10px 0;
-    font-size: 18px;
+.image_content{
+    position: relative;
+    height: 502px;
 }
-
-.main-container-left p {
-    font-size: 15px;
-    font-weight: 300;
+.main_article img{
+    width: 100%;
+    height: 502px;
+    object-fit: cover;
 }
-
-.main-container-left article {
-    padding: 10px;
-}
-
-.container-top-left {
-    padding: 15px 30px;
-}
-
-.container-bottom-left {
-    background: #001324;
-    margin: 15px 30px;
-}
-
-
-/*** main container right */
-
-.main-container-right {
-    padding: 30px 10px;
-}
-
-.main-container-right>h2 {
-    padding: 15px 0 15px 30px;
-}
-
-.main-container-right article {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    padding: 15px 0;
-    border-bottom: 1px solid #7ac64d;
-}
-
-.main-container-right article:last-child {
-    border-bottom: none;
-}
-
-.main-container-right img {
-    width: 100px;
-    height: 100px;
-    align-self: center;
-}
-
-.main-container-right h4 {
-    text-align: center;
+.stiker{
+    position: absolute;
+    left: 4%;
+    bottom: 0;
+    padding: 14px 16px 11px;
+    line-height: 20px;
+    font-size: 14px;
+    font-family:"Helvetica","Arial",sans-serif;
+    background-color: #FC392B;
+    color: #fff;
     text-transform: uppercase;
-    font-weight: 300;
-    font-size: 12px;
-    align-self: center;
 }
-
-.main-container-right article h2 {
-    font-size: 18px;
-    padding: 10px 0;
+.section__content{
+    padding: 24px 32px;
+    background-color: #fff;
 }
-
-.main-container-right article p {
-    font-size: 15px;
-    font-weight: 300;
-}
-
-.main-container-right article div {
-    margin-right: 10px;
-}
-
+.section__heading {
+    font-family: "Pensum Pro","Georgia",serif;
+    font-size: 52px;
+    font-weight: 900;
+    line-height: 56px;
+    letter-spacing: -0.52px;
+    text-align: center;
+  }
+  .section__heading::after{
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin: 24px 0 16px;
+    content: "";
+    background: linear-gradient(to right, #606060 0, #606060 25%, transparent 25%, transparent 100%) repeat-x 50% top;
+    background-size: 4px 1px;
+  }
+  .block__content{
+    display: flex;
+    column-gap: 20px;
+  }
+  .arcticle1{
+    width: 50%;
+  }
+  .arcticle1:nth-child(1){
+    border-right: 1px dotted;
+    padding-right: 20px;
+  }
+  .sub_article{
+    display: flex;
+    flex-direction: column;
+  }
+  .sub_article article::after{
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin: 24px 0 16px;
+    content: "";
+    background: linear-gradient(to right, #606060 0, #606060 25%, transparent 25%, transparent 100%) repeat-x 50% top;
+    background-size: 4px 1px;
+  }
+  
 
 /* footer section  */
 .footer {
-    padding: 0 9%;
+    padding: 2rem 9%;
+    background-color: #1a1a1a;
 }
 
-.top_footer {
-    display: flex;
-    align-items: center;
-    background-color: #003d60;
-    padding: 15px;
-    border-radius: 15px;
-    flex-wrap: wrap;
-    margin-bottom: 10px;
 
-}
-
-.top_footer div {
-    width: 33.33%;
-    display: flex;
-}
-
-.channels {
-    margin-right: auto;
-}
-
-.channels img {
-    padding-left: 10px;
-}
-
-.appdownload {
-    display: flex;
-    justify-content: space-between;
-}
-
-.social_media {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.social_media span {
-    margin-right: 20px;
-}
-
-.social_media_icon {
-    gap: 1.5rem;
-    margin-top: 5px;
-}
 
 .footer .box-container {
     display: flex;
@@ -943,8 +901,9 @@ main a:hover {
 
 .footer .box-container .box h3 {
     font-size: 14px;
-    padding: 10px 0;
+    padding: 0px 0px 8px;
     font-family: 'Montserrat', Arial, sans-serif;
+    color: #777777;
 }
 
 .footer .box-container .box a {
@@ -961,7 +920,7 @@ main a:hover {
 }
 
 .footer .box-container .box a:hover {
-    color: rgb(114 177 214);
+    text-decoration: underline;
     transition: .3s;
 }
 
@@ -1156,12 +1115,7 @@ hr {
 
 
 
-@media(min-width: 992px) {
-    main {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
+
 
 @media(min-width: 1080px) {
     .banner {
