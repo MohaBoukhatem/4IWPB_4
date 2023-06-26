@@ -31,15 +31,6 @@
                     <div class="logo">
                         <a href="/home.html"><img src="media/RTBF.svg" class="RTBF" id="logo-img"></a>
                     </div>
-
-                    <nav class="navbar">
-                        <ul>
-                            <li><a href="#">Video</a></li>
-                            <li><a href="#">Audio</a></li>
-                            <li><a href="#">mon choix</a></li>
-                            <li><a href="#">chaines</a></li>
-                        </ul>
-                    </nav>
                 </div>
                 <div class="one">
                     <input type="checkbox" id="checkbtn">
@@ -71,7 +62,7 @@
             </div>
         </div>
         <div class="bottom_head">
-            <div style="margin: auto;display: flex;align-items: center;">
+            <div style="margin: auto;display: flex;align-items: center;width: 1344px;">
 
 
                 <div class="two">
@@ -95,60 +86,56 @@
                         <div class="empty"></div>
                     </nav>
                 </div>
+                <div class="search">
+                    <input type="checkbox" id="search_btn">
+                    <label for="search_btn">
+                        <iconify-icon icon="octicon:search-24"></iconify-icon>
+                        <iconify-icon id="checkbtn4" class="close" icon="radix-icons:cross-1"></iconify-icon>
+                        <!-- <i class="fa fa-times close" aria-hidden="true"></i> -->
+
+                    </label>
+                    <div class="search_pannel">
+                        <label>Commencez à taper pour voir les articles que vous recherchez.</label>
+                        <form action="{{url_for('store.search')}}" method=get>
+                            <input name="search" type="text" placeholder="Rechercher ..." required>
+                            <button type="submit">
+                                <iconify-icon icon="ic:baseline-search"></iconify-icon>
+                            </button>
+                        </form>
+                    </div>
+                </div>
                 <nav class="navbar2">
                     <ul class="navbar-items">
-                        <li><a href="/home.html">acceuil</a>
-                        <li>
-                        <li><a href="#">filactu</a></li>
-                        <li>
-                            <input type="checkbox" id="checkbtn3" checked>
-                            <label for="checkbtn3">
-                                <span class="hamburger2">Info</span>
-                            </label>
-
-                            <nav class="sidebar2">
-                                <ul class="navbar-items2">
-                                    <span
-                                        style="align-self: center;margin-left: auto;text-transform: uppercase;font-weight: 600;padding-right: 1.25rem;font-size: 24px;">info
-                                        <span>|</span> </span>
-                                    <div class="sub_sidebar2">
-                                        <a href="#">regions</a>
-                                        <a href="#">belgique</a>
-                                        <a href="#">europe</a>
-                                        <a href="#">monde</a>
-                                        <a href="#">economie</a>
-                                        <a href="#">politique</a>
-                                        <a href="#">justice</a>
-                                        <a href="#">faky</a>
-                                        <a href="#">qustions-réponses</a>
-                                        <a href="#">chronique</a>
-                                        <a href="#">opinions</a>
-                                        <a href="#">météo</a>
-                                        <a href="#">trafic</a>
-
-
-                                    </div>
-                                </ul>
-                            </nav>
-                        </li>
-                        <li><a href="#">sport</a></li>
-                        <li><a href="#">actualités locales</a></li>
-                        <li><a href="#">culture et musique</a></li>
-                        <li><a href="#">environnement et nature</a></li>
-                        <li><a href="#">santé et bien-etre</a></li>
-                        <li><a href="#">sciences et technolgies</a></li>
-                        <li><a href="#">santé et bien-etre</a></li>
-                        <li><a href="#">vie pratique</a></li>
-                        <li><a href="#">tous les sujets</a></li>
+                        <li><a href="/home.html" class="active-link">à la Une</a>
+                        <li><a href="#">Vidéos</a></li>
+                        <li><a href="#">Rubriques</a></li>
+                       
                     </ul>
+                    
                 </nav>
+                <nav>
+                    <ul class="secondary_nav">
+                        <li><a href="#">Guerre en Ukrane</a></li>
+                        <li><a href="#">Les batilles de l'eau</a></li>
+                        <li><a href="#">L'affaire du fonds Marianne</a></li>
+                    </ul>
+                    
+                </nav>
+                <div class="nav__blog">
+                    <a class="text-with-icon _vcenter" href="https://blogs.mediapart.fr/" data-smarttag="" data-smarttag-name="le_club" data-smarttag-chapter1="journal" data-smarttag-chapter2="header" data-smarttag-level2="9" data-smarttag-type="navigation">
+                        <span style="margin: 0;">
+                            <div >Le Club de Mediapart</div>
+                            <div >Participez au débat</div>
+                        </span>
+                    </a>
+                </div>
 
             </div>
         </div>
 
     </nav>
     <div class="main_article">
-        <div style="max-width: 1300px;margin: auto;">
+        <div style="max-width: 1344px;margin: auto;">
             <div class="image_content">
                 <img src="media/the main article.jpg" alt="the main article">
                 <span class="stiker">Édition spéciale</span>
@@ -319,8 +306,8 @@
 
 
 
-    <footer class="footer" style="max-width: 1440px; margin: auto;">
-        <div class="box-container">
+    <footer class="footer" >
+        <div class="box-container" style="max-width: 1440px; margin: auto;">
 
             <div class="box">
                 <h3>thématiques</h3>
@@ -391,7 +378,6 @@
 
     </footer>
 
-    <hr>
 
 </body>
 
