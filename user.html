@@ -20,50 +20,243 @@
 </head>
 
 <body>
-  <section class="contact "style="max-width: 1344px;margin:auto;">
-    <div class="contact-container">
+    <nav class="merge_nav">
+        <div style="max-width: 1440px;margin: auto;;display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        background-color: transparent;">
+            <div class="head">
+                <div class="date">
+                    <ul>
+                        <li>
+                            <div class="language">français</div>
+                        </li>
+                        -
+                        <li>
+                            <div class="language">English</div>
+                        </li>
+                        -
+                        <li>
+                            <div class="language">Espanôl</div>
+                        </li>
+                    </ul>
+                    <p>lundi 26 juin </p>
+                    <span>Édition de la mi-journée </span>
+                </div>
+                <div class="link">
+                    <div class="logo">
+                        <a href="/home.html"><img src="media/logo.png"></a>
+                        <a href="/home.html"><img src="media/logo2.png"></a>
+                    </div>
+                </div>
+                <div class="one">
+                    <div class="search off">
+                        <input type="checkbox" id="search_btn">
+                        <label for="search_btn">
+                            <iconify-icon icon="octicon:search-24" style="color: black;border: none;"></iconify-icon>
+                            <iconify-icon id="checkbtn4" class="close" icon="radix-icons:cross-1"></iconify-icon>
+                            <!-- <i class="fa fa-times close" aria-hidden="true"></i> -->
     
- 
-        <div class="formulaire" >
-          <h1 class="contact_formulaire_title">Profile</h1>
-          <form method="post" name="contact_form">
-            
-            <div class="form__group">
-              <input name="last_name" id="email" placeholder="Nom" class="form__field" type="input"
-                autocomplete="off">
-              <label class="form__label" for="name">Nom</label>
+                        </label>
+                        <div class="search_pannel">
+                            <label>Commencez à taper pour voir les articles que vous recherchez.</label>
+                            <form action="{{url_for('store.search')}}" method=get>
+                                <input name="search" type="text" placeholder="Rechercher ..." required>
+                                <button type="submit">
+                                    <iconify-icon icon="ic:baseline-search"></iconify-icon>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <input type="checkbox" id="checkbtn">
+                    <label for="checkbtn">
+                        <i style="opacity: 1;" class="fas fa-bars hamburger off"></i>
+                        <iconify-icon id="checkbtn2" class="quitter" icon="radix-icons:cross-1"></iconify-icon>
+                    </label>
+
+                    <nav class="sidebar">
+                        <ul>
+                            <li class="sub_sidebar">
+                                <div style="padding: 35px 0;"></div>
+                                <a href="#">Fil actu</a>
+                                <a href="#">Video</a>
+                                <a href="#">Audio</a>
+                                <a href="#">mon choix</a>
+                                <a href="#">chaines</a>
+                            </li>
+                        </ul>
+                        <div class="empty"></div>
+                    </nav>
+                    <button class="abonne">S'abonner</button>
+                </div>
+                
             </div>
-            <div class="form__group">
-              <input name="first_name" id="email" placeholder="Prénom" class="form__field" type="input"
-                autocomplete="off">
-              <label class="form__label" for="name">Prénom</label>
+        </div>
+        <div class="bottom_head">
+            <div style="margin: auto;display: flex;align-items: center;width: 1344px;">
+
+
+                <div class="two">
+                    <input type="checkbox" id="checkbtn">
+                    <label for="checkbtn">
+                        <i style="margin-right: 10px;" class="fas fa-bars hamburger"><span>menu</span></i>
+                        <iconify-icon id="checkbtn2" class="quitter" icon="radix-icons:cross-1"></iconify-icon>
+                    </label>
+
+                    <nav class="sidebar">
+                        <ul>
+                            <li class="sub_sidebar">
+                                <div style="padding: 35px 0;"></div>
+                                <a href="#">Fil actu</a>
+                                <a href="#">Video</a>
+                                <a href="#">Audio</a>
+                                <a href="#">mon choix</a>
+                                <a href="#">chaines</a>
+                            </li>
+                        </ul>
+                        <div class="empty"></div>
+                    </nav>
+                </div>
+                <div class="search">
+                    <input type="checkbox" id="search_btn">
+                    <label for="search_btn">
+                        <iconify-icon icon="octicon:search-24"></iconify-icon>
+                        <iconify-icon id="checkbtn4" class="close" icon="radix-icons:cross-1"></iconify-icon>
+                        <!-- <i class="fa fa-times close" aria-hidden="true"></i> -->
+
+                    </label>
+                    <div class="search_pannel">
+                        <label>Commencez à taper pour voir les articles que vous recherchez.</label>
+                        <form action="{{url_for('store.search')}}" method=get>
+                            <input name="search" type="text" placeholder="Rechercher ..." required>
+                            <button type="submit">
+                                <iconify-icon icon="ic:baseline-search"></iconify-icon>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <nav class="navbar2">
+                    <ul class="navbar-items">
+                        <li><a href="/home.html" class="active-link">à la Une</a>
+                        <li><a href="#">Vidéos</a></li>
+                        <li><a href="#">Rubriques</a></li>
+                       
+                    </ul>
+                    
+                </nav>
+                <nav>
+                    <ul class="secondary_nav">
+                        <li><a href="#">Guerre en Ukrane</a></li>
+                        <li><a href="#">Les batilles de l'eau</a></li>
+                        <li><a href="#">L'affaire du fonds Marianne</a></li>
+                    </ul>
+                    
+                </nav>
+                <div class="nav__blog">
+                    <a class="text-with-icon _vcenter" href="https://blogs.mediapart.fr/" data-smarttag="" data-smarttag-name="le_club" data-smarttag-chapter1="journal" data-smarttag-chapter2="header" data-smarttag-level2="9" data-smarttag-type="navigation">
+                        <span style="margin: 0;">
+                            <div class="offf" >Le Club de Mediapart</div>
+                            <div class="offf" >Participez au débat</div>
+                            <div class="responsive" >Le Club de Mediapart</div>
+                        </span>
+                    </a>
+                </div>
+
             </div>
-            <div class="form__group">
-              <input name="email" placeholder="E-mail" class="form__field" type="email"
-                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" id="email" autocomplete="off">
-              <label class="form__label" for="name">Email</label>
-            </div>
-            <div class="form__group">
-              <input name="subject" id="sujet" placeholder="Sujet" class="form__field" type="input">
-              <label class="form__label" for="name">Sujet</label>
-            </div>
-            <div class="form__group">
-              <input name="phone_number" id="number" placeholder="Mettez votre numéro" class="form__field" type="text"
-                oninput="this.value=this.value.replace(/[^0-9]/g,'');" autocomplete="off">
-              <label class="form__label" for="name">téléphone</label>
-            </div>
-  
-            <div class="form__group">
-              <textarea name="Msg" id="box" placeholder="message" id="" cols="30" rows="10"></textarea>
-              <label class="form__label" for="name">Message</label>
-  
-            </div>
-            <button class="boutton-formulaire" type="submit"> Envoyer un message</button>
-          </form>
         </div>
 
-    </div>
-  </section>
+    </nav>
+    <section class="contact "style="max-width: 1344px;margin:auto;">
+      <div class="contact-container">
+      
+  
+          <div class="formulaire" >
+            <h1 class="contact_formulaire_title">Profile</h1>
+            <form method="post" name="contact_form">
+              
+              <div class="form__group">
+                <input name="last_name" id="email" placeholder="Nom" class="form__field" type="input"
+                  autocomplete="off">
+                <label class="form__label" for="name">Nom</label>
+              </div>
+              <div class="form__group">
+                <input name="first_name" id="email" placeholder="Prénom" class="form__field" type="input"
+                  autocomplete="off">
+                <label class="form__label" for="name">Prénom</label>
+              </div>
+              <div class="form__group">
+                <input name="email" placeholder="E-mail" class="form__field" type="email"
+                  pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" id="email" autocomplete="off">
+                <label class="form__label" for="name">Email</label>
+              </div>
+              <div class="form__group">
+                <input name="subject" id="sujet" placeholder="Sujet" class="form__field" type="input">
+                <label class="form__label" for="name">Sujet</label>
+              </div>
+              <div class="form__group">
+                <input name="phone_number" id="number" placeholder="Mettez votre numéro" class="form__field" type="text"
+                  oninput="this.value=this.value.replace(/[^0-9]/g,'');" autocomplete="off">
+                <label class="form__label" for="name">téléphone</label>
+              </div>
+    
+              <div class="form__group">
+                <textarea name="Msg" id="box" placeholder="message" id="" cols="30" rows="10"></textarea>
+                <label class="form__label" for="name">Message</label>
+    
+              </div>
+              <button class="boutton-formulaire" type="submit"> Envoyer un message</button>
+            </form>
+          </div>
+
+      </div>
+    </section>
+    <footer class="footer" >
+      <div class="box-container" style="max-width: 1440px; margin: auto;">
+
+          <div class="box">
+              <h3>Le Journal</h3>
+              <a href="#">International</a>
+              <a href="#">Écologie</a>
+              <a href="#">Économie et social</a>
+              <a href="#">France</a>
+              <a href="#">Politique</a>
+              <a href="#">Culture et idées</a>
+              <a href="#">Dossiers </a>
+              <a href="#">Fil d’actualités</a>
+              <a href="#">Journal imprimé</a>
+          </div>
+          <div class="box">
+              <h3>Le Studio</h3>
+              <a href="#">Vidéos</a>
+              <a href="#">Podcasts</a>
+              <a href="#">Documentaires</a>
+              <a href="#">Portfolios</a>
+              <a href="#">Panoramiques</a>
+          </div>
+          <div class="box">
+              <h3>Le Club</h3>
+              <a href="#">Depuis 48 heures</a>
+              <a href="#">Les blogs</a>
+              <a href="#">Les éditions</a>
+              <a href="#">L’agenda</a>
+              <a href="#">La charte</a>
+              <a href="#">Participez</a>
+          </div>
+          <div class="box">
+              <h3>À Propos</h3>
+              <a href="#"> Qui sommes-nous ?</a>
+              <a href="#">Besoin d’aide ?</a>
+              <a href="#"> Nous contacter</a>
+              <a href="#">Partager des documents</a>
+              <a href="#">Plan du site</a>
+              <a href="#">Recrutement</a>
+          </div>     
+
+      </div>
+
+    </footer>
+
 </body>
 
 </html>
